@@ -1,5 +1,4 @@
 var expect = require('chai').expect
-  , proxyApp = require('./app')
   , express = require('express')
   , request = require('supertest')
   , fsRedirectUrl = require('..');
