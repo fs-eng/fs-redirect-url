@@ -29,7 +29,6 @@
     "supertest": "~0.5.1",
     "chai": "~1.8.1"
   },
-  "readme": "simple-http-proxy [![Build Status](https://travis-ci.org/flokk/simple-http-proxy.png?branch=master)](https://travis-ci.org/flokk/simple-http-proxy)\n=================\n\nSimple proxy middleware for connect/express\n\nUsage\n-----\n\nCreate an http app\n```js\n/**\n * Module dependencies\n */\nvar express = require(\"express\")\n  , proxy = require(\"simple-http-proxy\");\n\n/**\n * Expose the app\n */\nvar app = module.exports = express();\n\n/**\n * Mount the proxy middleware\n */\napp.use(\"/api\", proxy(\"http://my.other.host.com/path-to-proxy\"));\n```\n\nMake the request\n```sh\n$ curl http://localhost:5000/api\n\n<h1>Welcome to my.other.host.com/path-to-proxy</h1>\n```\n\nYou can also specify some options as a second parameter\n\n```\n// snip\n\napp.use(\"/api\", proxy(\"http://my.other.host.com/path-to-proxy\", {\n\n  // Disable sending cookies; on by deafult\n  cookies: false,\n\n  // Add x-forwarded-* headers to proxy request\n  xforward: true,\n\n  // Change the timeout length of the proxy (defaults to 10 seconds)\n  timeout: 20000\n}));\n\n// snip\n```\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/fs-eng/fs-redirect-url/issues"
