@@ -1,6 +1,6 @@
 {
   "name": "fs-redirect-url",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Sets and unsets cookie with redirect url when creating an account on FamilySearch.org.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fs-eng/fs-redirect-url.git"
+    "url": "git://github.com/fs-webdev/fs-redirect-url.git"
   },
   "keywords": [
     "url",
@@ -31,9 +31,9 @@
   },
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/fs-eng/fs-redirect-url/issues"
+    "url": "https://github.com/fs-webdev/fs-redirect-url/issues"
   },
-  "homepage": "https://github.com/fs-eng/fs-redirect-url",
+  "homepage": "https://github.com/fs-webdev/fs-redirect-url",
   "_id": "fs-redirect-url@0.0.1",
   "_from": "fs-redirect-url@~0.0.1"
 }
